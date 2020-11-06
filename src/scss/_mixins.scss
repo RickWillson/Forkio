@@ -1,0 +1,51 @@
+
+@mixin fork-item-title ($ptb, $plr, $bckgrd) {
+	text-transform: uppercase;
+	font-size: 24px;
+	padding: $ptb $plr;
+	background-color: $bckgrd;
+}
+@mixin fork-item-content-block ($pt, $bcolor, $height) {
+	padding-top: $pt;
+	background-color: $bcolor;
+	height: $height;
+	position: relative;
+}
+@mixin forkItemPrice ($fs) {
+	display: block;
+	font-size: $fs;
+	font-weight: 700;
+}
+@mixin forkItem-priceTime ($mt) {
+	display: block;
+	margin-top: $mt;
+	font-size: 14px;
+	text-transform: uppercase;
+}
+@mixin forkDescript ($mt) {
+	position: relative;
+	font-size: 16px;
+	margin-top: $mt;
+	padding: 0 15px;
+}
+@mixin forkLine {
+	display: block;
+	content: "";
+	height: 5px;
+	width: 60px;
+	background: #8D81AC;
+	position: absolute;
+	top: -40px;
+	left: calc(50% - (60px / 2));
+}
+@mixin forkButton ($pos-bot, $fsize, $ptb, $plr, $bcolor, $bord-rad) {
+	position: absolute;
+	bottom:$pos-bot;
+	color: #FFFFFF;
+	font-size: $fsize;
+	text-transform: uppercase;
+	padding: $ptb $plr;
+	border: 1px solid transparent;
+	background-color: $bcolor;
+	border-radius: $bord-rad $bord-rad;
+}
