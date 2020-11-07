@@ -1,0 +1,77 @@
+.about {
+  background-image: url(../../dist/img/about/bgAbout.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-bottom: -17px;
+}
+
+.about-title {
+  text-align: center;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 50px;
+  padding: 100px 0 80px;
+  color: #FFFFFF;
+  margin: 0;
+}
+
+.about-content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+.content-item__text {
+  font-family: 'Lato', sans-serif;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  color: #FFFFFF;
+  padding: 0 10px;
+}
+
+.about-content {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  text-align: center; 
+  justify-items: center; 
+}
+
+.content-item {
+  width: 315px;
+  margin-bottom: 80px;
+}
+
+.about-coments {
+  font-family: 'Lato', sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  color: #A291A5;
+  max-width: 880px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 0 10px 30px;
+  display: flex;
+  position: relative;
+  justify-content: center;
+}
+
+.about-coments::after {
+  content: "";
+  position: absolute;
+  bottom: 35px;
+  background: #645766;
+  width: 85%;
+  height: 2px;
+
+}
+
+.about-coments p {
+  margin: 0;
+  padding-bottom: 20px;
+}
+

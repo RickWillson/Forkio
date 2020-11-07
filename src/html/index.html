@@ -8,12 +8,14 @@
     <link rel="stylesheet" href="./dist/css/styles.min.css" />
   </head>
   <body class="page__body">
-    <header>
 
-    </header>
+      @@include(markdown("header.html"))
+
     <main>
+      
       @@include(markdown("Revolutionary.html"))
       @@include(markdown("Here is what you get.html"))
+      @@include(markdown("about.html"))
       @@include(markdown("Fork Subscription Pricing.html"))
     </main>
     <script src="./dist/js/script.min.js"></script>
